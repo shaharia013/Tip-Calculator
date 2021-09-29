@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.4px;
+}
+body{
+    background-color: #fff;
+    height: 100%;
+  background: linear-gradient(135deg,#6f6df4,#4c4af4) fixed;
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+}
+
+
+.container{
+    background-color: #ffffff;
+    width: 450px;
+    padding: 50px 40px;
+    border-radius: 10px;
+    position: fixed;
+    transform: translate(-50%,50%);
+    bottom: 50%;
+    left: 50%;
+    box-shadow: 0 0 30px 40px rgba(0,0,0,0.1);
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: crimson;
+    font-weight: 900;
+    margin-block-end: 50px;
+}
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0 ;
+}
+.lbl{
+    font-size: 16px;
+    color: rgb(61, 3, 61);
+    font-weight: 400;
+}
+.val{
+    font-size: 18px;
+    font-weight: 500px;
+    color:#44475b;
+}
+
+.input-box{
+    background-color: #cdccfd;
+    color: #6f6df4;
+    padding: 5px;
+}
+
+#bill{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100px;
+    text-align: center;
+}
+hr{
+    border: rgba(0,0,0,0.1);
+    margin-top: 10px;
+    border-bottom: 1px solid #cdccfd;
+}
+input[type="range"]{
+    width: 100%;
+    cursor: pointer;
+}
+input[type="range"]:not(:last-child){
+    margin-bottom: 5px;
+}
+#total_amount , #total_amount_per_person{
+    background-color: #6f6df4;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px 0;
+
+}
+#total-amount-per-person , #total-amount,#tip-amount{
+    background: transparent;
+    outline: none;
+    border: none;
+    text-align: right;
+}

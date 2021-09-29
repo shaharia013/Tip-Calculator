@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script src="./JS/index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>TIP CALCULATOR</h1>
+        <section>
+            <div class="body">
+            <label for="bill" class="lbl">
+                Bill
+            </label>
+            <div class="input-box">
+                <span>
+                    &#8377;
+                </span>
+                <input type="number" value="0" id="bill" class="val" onchange="onBillAmountChange(this)" >
+            </div>
+            </div>
+
+            <div class="body">
+                <label for="no-of-people" class="lbl">
+                    No. of People
+
+                </label>
+                <span id="num-person" class="val">
+                    1
+                </span>
+            </div>
+            <input type="range" min="1" max="15" value="1" id="no-of-people" onchange="onNoOfPersonChange(this)">
+
+           
+            <hr>
+
+        </section>
+
+<section>
+    <div class="body">
+        <span class="lbl">Tip ( in &#8377) : </span>
+        <input type="number" id="tip-amount" class="val" value="0" readonly>
+      
+    </div>
+
+    <div class="body">
+        <label for="Tip%" class="lbl">
+            Tip %
+        </label>
+        <span id="tip-percent" class="val">
+            15%
+        </span>
+    </div>
+    <input type="range" min="1"   id="tip" value="15" onchange="onTipPercentageChange(this)">
+    
+    <hr>
+</section>
+
+<section>
+    <div class="body"  id="total_amount">
+        <span class="lbl">Total Amount(in &#8377;) :</span>
+        <input type="number" id="total-amount" class="val" value="0" readonly>
+       
+    </div>
+
+    <div class="body" id="total_amount_per_person">
+        <span class="lbl">Total Amount per Person(in &#8377;) :</span>
+        <input type="number" id="total-amount-per-person" value="0" class="val"readonly>
+        
+    </div>
+</section>
+    </div>
+
+
+        
+</body>
+</html>
